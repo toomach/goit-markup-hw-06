@@ -592,16 +592,53 @@ padding: 32px 0;
 
 .footer {
     background-color: #2e2f42;
+    padding: 96px 0;
+}
+
+@media only screen and (min-width: 1158px) {
+.footer {
     padding: 100px 0;
+  }
 }
 
 .container-footer {
     display: flex;
+    flex-direction: column;
+    row-gap: 72px;
+}
+
+@media only screen and (min-width: 768px) {
+.container-footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 108px;
+    column-gap: 24px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+.container-footer {
+    gap: 0;
+    padding: 0 15px;
     align-items: baseline;
+  }
 }
 
 .footer-container-logo {
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+.footer-container-logo {
+    width: 264px;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+.footer-container-logo {
     margin-right: 120px;
+  }
 }
 
 .footer-logo {
@@ -627,8 +664,20 @@ padding: 32px 0;
     max-width: 264px;
 }
 
+@media only screen and (max-width: 767.99px) {
+.footer-paragraph {
+    margin: auto;
+  }
+}
+
 .footer-social {
     margin-right: auto;
+}
+
+@media only screen and (max-width: 767.99px) {
+.footer-social {
+    margin: 0;
+  }
 }
 
 .footer-paragraph-social {
@@ -639,6 +688,13 @@ padding: 32px 0;
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 1158px) {
+.footer-paragraph-social {
+    text-align: left;
+  }
 }
 
 .footer-item-svg {
@@ -674,8 +730,13 @@ padding: 32px 0;
 }
 
 .footer-sabscribe {
-    display: flex;
-    flex-direction: column;
+    
+}
+
+@media only screen and (min-width: 1158px) {
+.footer-sabscribe {
+    dmargin-left: auto;
+  }
 }
 
 .sabscribe-paragraph {
@@ -685,12 +746,27 @@ padding: 32px 0;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #FFFFFF;
+    text-align: center;
+}
+
+@media only screen and (min-width: 756px) {
+.sabscribe-paragraph {
+    text-align: left;
+  }
 }
 
 .sabscribe-form {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    gap: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+.sabscribe-form {
+    flex-direction: row;
     gap: 24px;
+  }
 }
 
 .subscribe-label {
@@ -711,6 +787,12 @@ padding: 32px 0;
     line-height: 2;
     letter-spacing: 0.04em;
     padding: 8px 16px;
+}
+
+@media only screen and (min-width: 768px) {
+.subscribe-input {
+    width: 264px;
+  }
 }
 
 .subscribe-button {
@@ -762,7 +844,7 @@ padding: 32px 0;
     pointer-events: none;
 }
 
-.backdrop.is-open {
+.backdrop.is-ope {
     opacity: 1;
     visibility: visible;
     pointer-events: initial;
@@ -1055,7 +1137,7 @@ padding: 32px 0;
     visibility: hidden;
 }
 
-.mobile-menu.is-open {
+.mobile-menu.is-ope {
     transform: translate(0);
 
     visibility: visible;
